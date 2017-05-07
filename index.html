@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ufoApp.io</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="og:title" content="ufo App" />
+    <meta name="og:image" content="https://hyper.now.sh/static/hyper.png" />
+    <meta name="theme-color" content="#000000">
+    <link rel="shortcut icon" href="favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet/css" href="fonts/stylesheet.css" />
+    <style rel="stylesheet/css">
+      body, html {
+        background-color: #212C31;
+        margin: 20px;
+        -webkit-font-smoothing: antialiased;
+        font-family: 'Roboto', Helvetica, Arial;
+        font-weight: 300;
+      }
+      main {
+        max-width: 1900px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+      }
+      .header {
+        position: relative;
+        display: flex;
+        flex-shrink: 0;
+        flex-grow: 1;
+        height: 200px;
+        margin-bottom: 20px;
+        max-width: 1790px;
+        align-items: flex-end;
+        justify-content: center;
+      }
+      .header__logo {
+        width: 256px;
+        height: 165px;
+        font-size: 0;
+        display: block;
+        background: url('img/logo.svg') no-repeat;
+      }
+      .header__github:hover {
+        opacity: 0.7;
+      }
+      video {
+        position: relative;
+        margin: 0 auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 100%;
+        max-width: 1856px;
+      }
+      .download {
+        padding: 0px 0 40px 0;
+        text-align: center;
+      }
+      .download__link {
+        border: 1px solid #E93E5B;
+        color: #E93E5B;
+        font-family: 'League Spartan', Helvetica, Arial;
+        display: inline-block;
+        text-decoration: none;
+        letter-spacing: 2px;
+        font-size: 15px;
+        text-transform: uppercase;
+        cursor: default;
+        padding: 15px 40px 12px;
+      }
+      .free {
+        color: rgba(255,255,255,.3);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 0 20px 0;
+      }
+      .github {
+        width: 105px;
+        height: 22px;
+        font-size: 0;
+        opacity: 1;
+        margin: 20px;
+        display: block;
+        background: url('img/github.svg') no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <div class="header__logo">
+          ufo App - make notes where you need them
+        </div>
+      </header>
+      <video src="video/ufo-screenrecording.mp4" loop autoplay>
+        Sorry, your browser doesn't support embedded videos,
+        but don't worry, you can <a href="videos/ufo-screenrecording.mp4">download it</a>
+        and watch it with your favorite video player!
+      </video>
+      <div class="download">
+        <a href="#" class="download__link">
+          Public Beta Release in Q2 2017
+        </a>
+      </div>
+      <div class="free">
+        <span>Free &amp; open source</span>
+        <a href="#" class="github">
+          Github
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
