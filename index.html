@@ -1,117 +1,142 @@
 <!doctype html>
 <html>
   <head>
-    <title>ufoApp.io</title>
+    <title>UFO APP – Make Nodes Where You Need Them</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0" />
-    <meta name="twitter:card" content="summary_large_image" />
     <meta name="og:title" content="ufo App" />
-    <meta name="og:image" content="https://hyper.now.sh/static/hyper.png" />
     <meta name="theme-color" content="#000000">
     <link rel="shortcut icon" href="favicon.png" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
     <link rel="stylesheet/css" href="fonts/stylesheet.css" />
-    <style rel="stylesheet/css">
-      body, html {
-        background-color: #212C31;
-        margin: 20px;
-        -webkit-font-smoothing: antialiased;
-        font-family: 'Roboto', Helvetica, Arial;
-        font-weight: 300;
-      }
-      main {
-        max-width: 1900px;
-        margin: 0 auto;
-        margin-bottom: 100px;
-      }
-      .header {
-        position: relative;
-        display: flex;
-        flex-shrink: 0;
-        flex-grow: 1;
-        height: 200px;
-        margin-bottom: 20px;
-        max-width: 1790px;
-        align-items: flex-end;
-        justify-content: center;
-      }
-      .header__logo {
-        width: 256px;
-        height: 165px;
-        font-size: 0;
-        display: block;
-        background: url('img/logo.svg') no-repeat;
-      }
-      .header__github:hover {
-        opacity: 0.7;
-      }
-      video {
-        position: relative;
-        margin: 0 auto;
-        flex-grow: 1;
-        flex-shrink: 1;
-        width: 100%;
-        max-width: 1856px;
-      }
-      .download {
-        padding: 0px 0 40px 0;
-        text-align: center;
-      }
-      .download__link {
-        border: 1px solid #E93E5B;
-        color: #E93E5B;
-        font-family: 'League Spartan', Helvetica, Arial;
-        display: inline-block;
-        text-decoration: none;
-        letter-spacing: 2px;
-        font-size: 15px;
-        text-transform: uppercase;
-        cursor: default;
-        padding: 15px 40px 12px;
-      }
-      .free {
-        color: rgba(255,255,255,.3);
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 0 20px 0;
-      }
-      .github {
-        width: 105px;
-        height: 22px;
-        font-size: 0;
-        opacity: 1;
-        margin: 20px;
-        display: block;
-        background: url('img/github.svg') no-repeat;
-      }
-    </style>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
   </head>
   <body>
     <main>
       <header class="header">
-        <div class="header__logo">
-          ufo App - make notes where you need them
-        </div>
+        <h1 class="header__logo">
+          <img
+            data-sizes="auto"
+            src="/images-responsive/icon-100.png"
+            data-srcset="
+              /images-responsive/icon-100.png 100w,
+              /images-responsive/icon-200.png 200w,
+              /images-responsive/icon-400.png 400w,
+              /images-responsive/icon-600.png 600w,
+              /images-responsive/icon-800.png 800w,
+              /images-responsive/icon-1200.png 1200w,
+              /images-responsive/icon-1500.png 1500w,
+              /images-responsive/icon-2000.png 2000w,
+              /images-responsive/icon-2500.png 2500w
+            "
+            class="lazyload blur"
+          />
+          UFO APP
+        </h1>
       </header>
-      <video src="video/ufo-screenrecording.mp4" loop autoplay>
-        Sorry, your browser doesn't support embedded videos,
-        but don't worry, you can <a href="videos/ufo-screenrecording.mp4">download it</a>
-        and watch it with your favorite video player!
-      </video>
-      <div class="download">
-        <a href="#" class="download__link">
-          Public Beta Release in Q2 2017
+      <section class="intro">
+        <img
+          data-sizes="auto"
+          src="/images-responsive/ufo-intro-100.png"
+          data-srcset="
+            /images-responsive/ufo-intro-100.png 100w,
+            /images-responsive/ufo-intro-200.png 200w,
+            /images-responsive/ufo-intro-400.png 400w,
+            /images-responsive/ufo-intro-600.png 600w,
+            /images-responsive/ufo-intro-800.png 800w,
+            /images-responsive/ufo-intro-1200.png 1200w,
+            /images-responsive/ufo-intro-1500.png 1500w,
+            /images-responsive/ufo-intro-2000.png 2000w,
+            /images-responsive/ufo-intro-2500.png 2500w
+          "
+          class="lazyload blur"
+        />
+        <h2 class="h-center">
+          Store everything well organized on one single place.<br/>
+          The place were it should be stored.
+        </h2>
+        <a href="https://github.com/jakoblo/ufo" class="box">
+          free &amp; open source
+          <img class="github-logo" src="/images-vector/github.svg" />
         </a>
+      </section>
+      <section class="videos">
+        <section class="favbar">
+          <div class="text">
+            <h3>Customize</h3>
+            <h4>your Favourites</h4>
+          </div>
+          <video src="/videos/favbar.mp4" class="video-shadow" loop autoplay>
+            Sorry, your browser doesn't support embedded videos,
+            but don't worry, you can <a href="/videos/favbar.mp4">download it</a>
+            and watch it with your favorite video player!
+          </video>
+        </section>
+
+        <section class="rich-text">
+          <video src="/videos/rich-text.mp4" class="video-shadow" loop autoplay>
+            Sorry, your browser doesn't support embedded videos,
+            but don't worry, you can <a href="/videos/rich-text.mp4">download it</a>
+            and watch it with your favorite video player!
+          </video>
+          <div class="text">
+            <h3>Rich Text Editing</h3>
+            <h4>in your Folders</h4>
+            <ul>
+              <li>
+                Create your lokal Wiki
+              </li>
+              <li>
+                Document your projects
+              </li>
+              <li>
+                Manage your todos
+              </li>
+              <li>
+                Collect everything in one place
+              </li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section class="full">
+        <h3>Delightfull Navigation</h3>
+        <h4>and File Management</h4>
+        <video src="/videos/full.mp4" class="video-shadow" loop autoplay>
+          Sorry, your browser doesn't support embedded videos,
+          but don't worry, you can <a href="/videos/full.mp4">download it</a>
+          and watch it with your favorite video player!
+        </video>
+      </section>
+      <div class="release">
+        <div class="box box--red">
+          Public Beta Release in Q3 2017
+        </div>
       </div>
-      <div class="free">
-        <span>Free &amp; open source</span>
-        <a href="https://github.com/jakoblo/ufo" class="github">
-          Github
-        </a>
-      </div>
+
     </main>
+    <footer>
+      <section class="contact">
+        <div class="inner">
+          <h3>Contact</h3>
+          Sebastian Wolf<br/>
+          80809 München, Connollystraße 3 / K53<br/>
+          +49 151 127 333 13 <span class="e-mail" data-user="naitsabes" data-website="krow.flovv" onclick="mailto()"></span>
+        </div>
+      </section>
+      <section class="footer__github">
+        <a href="https://github.com/jakoblo/ufo">
+          <img class="github-logo" src="/images-source/github.png" />
+        </a>
+      </section>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/3.0.0/lazysizes.min.js" async=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js" async=""></script>
+    <script src="/js/main-dist.js"></script>
+
   </body>
 </html>

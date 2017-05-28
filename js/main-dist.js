@@ -1,0 +1,1 @@
+function mailto(){window.location.href="mailto:"+"naitsabes".split("").reverse().join("")+"@"+"krow.flovv".split("").reverse().join("")}
